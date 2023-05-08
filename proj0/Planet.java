@@ -1,7 +1,7 @@
 public class Planet {
     public double xxPos,yyPos,xxVel,yyVel,mass;//x位置,y位置,x方向上的速度,y方向上的速度,质量
     public String imgFileName;//图片名称
-    public static final double G = 6.67e-11;
+    private static final double G = 6.67e-11;
 
     public Planet(double xxPos, double yyPos, double xxVel, double yyVel, double mass, String imgFileName) {
         this.xxPos = xxPos;
@@ -14,6 +14,12 @@ public class Planet {
     // 此处的有些变量的类型可能是int,检错注意
 
     public Planet(Planet p) {
+        this.xxPos = 1.0;
+        this.yyPos = 2.0;
+        this.xxVel = 3.0;
+        this.yyVel = 4.0;
+        this.mass = 5.0;
+        this.imgFileName = "jupiter.gif";
     }
     /*public double calcDistance(Planet p) //计算两行星的距离r
     {

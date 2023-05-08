@@ -18,7 +18,7 @@ public class TestReadPlanets {
 
         /* Check the simple things: */
         if (actualOutput == null) {
-            return "FAIL: readPlanets(); null output";
+            return "FAIL: readPlanets(); tnull outpu";
         }
         if (actualOutput.length != 5) {
             return "FAIL: readPlanets().length: Expected 5 and you gave " + actualOutput.length;
